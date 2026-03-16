@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eterna | Luxury Wedding & Event Planning</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tactical Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <span class="loader-text">Eterna.</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Eterna.</a>
+            
+            <div class="menu-btn" id="menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="btn btn-outline-nav">Book Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="home" class="hero">
+        <canvas class="particles-canvas" id="particles-canvas"></canvas>
+        <div class="hero-bg" id="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <p class="hero-subtitle">Bespoke Wedding Design</p>
+            <h1 class="hero-title">Crafting Your <span class="gold-foil">Perfect</span> Forever</h1>
+            <p class="hero-text">Curating unparalleled luxury weddings & events tailored effortlessly to your love story.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn btn-primary btn-magnetic">View Portfolio</a>
+                <a href="#contact" class="btn btn-outline btn-magnetic">Let's Talk</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <p>Scroll to explore</p>
+            <i class="ph ph-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1000" alt="Wedding Rings and Flowers">
+                    <div class="experience-badge">
+                        <span class="number">10+</span>
+                        <span class="text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-title">We turn your vision into an unforgettable reality.</h2>
+                    <h3 class="section-subtitle">About Eterna</h3>
+                    <p>At Eterna, we believe that your wedding day should be a flawless reflection of your unique romance. From the grandest conceptual designs to the smallest intimate details, our team of world-class planners and designers work tirelessly to ensure perfection.</p>
+                    <p>We source the finest venues, top-tier vendors, and bespoke decor to create immersive experiences that leave you and your guests breathless.</p>
+                    <a href="#services" class="link-arrow">Discover Our Process <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h3 class="section-subtitle">Our Expertise</h3>
+                <h2 class="section-title">Curated Services</h2>
+                <div class="separator-line mx-auto"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="ph ph-calendar-star"></i></div>
+                    <h3>Full-Service Planning</h3>
+                    <p>From inception to execution, we handle every detail—venue selection, vendor curation, timeline management, and conceptual design.</p>
+                    <a href="#" class="link-arrow">Learn More <i class="ph ph-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card reveal" style="transition-delay: 0.1s">
+                    <div class="service-icon"><i class="ph ph-flower-lotus"></i></div>
+                    <h3>Event Design & Styling</h3>
+                    <p>Creating immersive, visually stunning environments with bespoke florals, luxury furnishings, and elegant tablescapes.</p>
+                    <a href="#" class="link-arrow">Learn More <i class="ph ph-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card reveal" style="transition-delay: 0.2s">
+                    <div class="service-icon"><i class="ph ph-sparkle"></i></div>
+                    <h3>Day-of Coordination</h3>
+                    <p>For the couple who planned it all but needs a professional team to execute the day flawlessly while they celebrate.</p>
+                    <a href="#" class="link-arrow">Learn More <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages section bg-dark">
+        <div class="container">
+            <div class="section-header text-center reveal reveal-stagger-parent">
+                <h3 class="section-subtitle">The Experience</h3>
+                <h2 class="section-title text-white gold-foil">Signature Collections</h2>
+                <div class="separator-line mx-auto"></div>
+            </div>
+            
+            <div class="packages-grid reveal-stagger-parent">
+                <div class="package-card glass-card reveal-stagger-child">
+                    <div class="package-content">
+                        <h3>The Intimate Collection</h3>
+                        <p class="package-price">Starts at RM 15,000</p>
+                        <p class="package-desc">For celebrations under 50 guests. Boutique planning, curated micro-venues, and effortless romance.</p>
+                        <ul class="package-features">
+                            <li><i class="ph ph-check"></i> Venue Curation</li>
+                            <li><i class="ph ph-check"></i> Bespoke Design Concept</li>
+                            <li><i class="ph ph-check"></i> Vendor Sourcing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="package-card glass-card featured reveal-stagger-child" style="transition-delay: 0.1s">
+                    <div class="popular-badge">Most Requested</div>
+                    <div class="package-content">
+                        <h3 class="gold-foil">The Signature Collection</h3>
+                        <p class="package-price">Starts at RM 35,000</p>
+                        <p class="package-desc">Comprehensive luxury planning from start to finish. We handle every detail effortlessly.</p>
+                        <ul class="package-features">
+                            <li><i class="ph ph-check"></i> Full-Service Planning</li>
+                            <li><i class="ph ph-check"></i> Custom Scenography</li>
+                            <li><i class="ph ph-check"></i> 3-Day Event Coordination</li>
+                            <li><i class="ph ph-check"></i> Premium Vendor Sourcing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="package-card glass-card reveal-stagger-child" style="transition-delay: 0.2s">
+                    <div class="package-content">
+                        <h3>The Destination Collection</h3>
+                        <p class="package-price">Custom Quote</p>
+                        <p class="package-desc">Taking your love story across the beautiful landscapes of Malaysia and beyond. Specializing in Langkawi resorts, Cameron Highlands, and beyond.</p>
+                        <ul class="package-features">
+                            <li><i class="ph ph-check"></i> Outstation Logistics</li>
+                            <li><i class="ph ph-check"></i> Multi-Day Itineraries</li>
+                            <li><i class="ph ph-check"></i> Concierge Guest Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Banner Strip -->
+    <section class="banner-strip reveal">
+        <div class="banner-content">
+            <h2>"Love is not merely looking at each other, but looking in the same direction."</h2>
+            <p>— Antoine de Saint-Exupéry</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h3 class="section-subtitle">Our Masterpieces</h3>
+                <h2 class="section-title">A Glimpse of Magic</h2>
+                <div class="separator-line"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item item-tall reveal">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800" alt="Wedding Couple">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <h4>The Tuscany Estate</h4>
+                            <p>Destination Wedding</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item item-wide reveal" style="transition-delay: 0.1s">
+                    <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1200" alt="Wedding Table Setup">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <h4>Enchanted Forest</h4>
+                            <p>Outdoor Reception</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal" style="transition-delay: 0.2s">
+                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&q=80&w=800" alt="Wedding Cake">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <h4>Modern Classic</h4>
+                            <p>Bespoke Details</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal" style="transition-delay: 0.3s">
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=800" alt="Floral Arrangement">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <h4>Autumn Romance</h4>
+                            <p>Floral Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 reveal">
+                <a href="#" class="btn btn-outline">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section bg-dark">
+        <div class="container text-center reveal">
+            <i class="ph-fill ph-quotes text-gold quotes-icon"></i>
+            <div class="testimonial-slider" id="testimonial-slider">
+                <div class="testimonial active">
+                    <p class="quote">"Eterna completely exceeded our expectations. Our wedding was an absolute dream, and their attention to detail made the entire day flawless. We couldn't have asked for a better team."</p>
+                    <h5 class="client">— Sarah & James, The St. Regis Kuala Lumpur</h5>
+                </div>
+                <div class="testimonial">
+                    <p class="quote">"The team at Eterna turned a stressful planning process into a completely joyful experience. Their design eye is unmatched, and they flawlessly executed a 3-day destination wedding for us."</p>
+                    <h5 class="client">— Elena & Marco, The Datai Langkawi</h5>
+                </div>
+                <div class="testimonial">
+                    <p class="quote">"If you want a truly luxurious, breathtaking event where you don't have to worry about a single detail, look no further. Pure magic from start to finish."</p>
+                    <h5 class="client">— David & Michael, Janda Baik Private Estate</h5>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section text-center">
+        <div class="container">
+            <div class="contact-card reveal">
+                <h3 class="section-subtitle">Let's Connect</h3>
+                <h2 class="section-title">Begin Your Journey</h2>
+                <div class="separator-line mx-auto mb-4"></div>
+                <p class="mb-5">Schedule a complimentary consultation to discuss your vision, <br>our process, and how we can bring your dream celebration to life.</p>
+                
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Names" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Estimated Wedding Date">
+                        <input type="text" placeholder="Venue or Location">
+                    </div>
+                    <textarea placeholder="Tell us about your vision..." rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-block">Request Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo-footer">Eterna.</a>
+                    <p>Curating unparalleled luxury weddings & events seamlessly tailored to your love story, globally.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph ph-pinterest-logo"></i></a>
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:hello@eternawedding.com">hello@eternawedding.com</a></li>
+                        <li><a href="tel:+60123456789">+60 12-345 6789</a></li>
+                        <li>Kuala Lumpur | Penang | Langkawi</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eterna Luxury Weddings. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
