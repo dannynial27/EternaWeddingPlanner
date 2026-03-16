@@ -2,6 +2,8 @@
 
 ![Eterna Logo](https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1000)
 
+**[👀 View Live Demo ](https://dannynial27.github.io/EternaWeddingPlanner/)**
+
 Eterna is an ultra-premium, "bombastic" front-end template designed for high-end wedding planning businesses. It features an exquisite design language incorporating modern luxury trends, glassmorphism, fluid animations, and a rich aesthetic tailored for the Malaysian market.
 
 ## ✨ Features
